@@ -1,0 +1,114 @@
+[0514/013058.646:INFO:CONSOLE(311)] "not loaded module js/expected-language", source: https://tr.tradingview.com/static/bundles/main_chart.2db22bbec120a0208f1f.js (311)
+[0914/000722.807:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/001638.655:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/005439.317:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/010703.705:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/012521.291:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/013905.255:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/142939.218:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/143942.810:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/144533.901:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/145413.783:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/152438.504:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/152740.341:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/190044.498:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/192934.627:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/231414.668:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/231950.346:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/232610.868:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0914/232908.637:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/003935.930:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/004440.431:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/010028.203:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/010921.758:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/011011.355:WARNING:spdy_session.cc(3505)] Received HEADERS for invalid stream 1
+[0915/011027.171:ERROR:cursor_loader.cc(115)] Failed to load a platform cursor of type kGrabbing
+[0915/011036.817:INFO:CONSOLE(377)] "Saving chart with empty name is not allowed", source: https://tr.tradingview.com/static/bundles/main_chart.a2dea07622aeb08a8978.js (377)
+[0915/011056.257:INFO:CONSOLE(0)] "Uncaught (in promise) Unnamed chart cannot be saved", source: https://tr.tradingview.com/chart/?symbol=BINANCE%3ABTCUSDT (0)
+[0915/011121.277:INFO:CONSOLE(6)] "Powered by AMP ⚡ HTML – Version 2109032350000 https://tr.tradingview.com/chart/?symbol=BINANCE%3ABTCUSDT", source: https://cdn.ampproject.org/rtv/012109032350000/amp4ads-v0.mjs (6)
+[0915/021424.626:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/022337.873:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/023640.831:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/024333.404:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/025140.818:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/030320.282:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/030914.911:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/032745.938:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/033621.817:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/035114.911:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/040724.437:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/112508.942:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/114314.090:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0915/230427.457:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0916/000533.122:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0916/001339.330:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0916/003642.177:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0916/004053.661:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0916/010832.875:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0916/013848.871:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0916/230954.632:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0917/001013.178:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0917/012231.024:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0917/012857.178:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0917/013949.092:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0917/014433.320:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0918/004328.147:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0919/014414.633:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0919/014918.089:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0919/015809.932:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0919/020251.676:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0919/035347.759:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0919/134458.031:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0919/140845.444:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0919/141538.694:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0919/142412.396:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0919/203032.242:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0920/002640.114:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0920/003526.485:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0920/004254.472:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0925/143256.123:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0925/145304.869:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0925/152357.427:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0925/152357.428:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/000401.069:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/000401.073:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012502.145:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012502.175:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012507.166:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012507.184:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012512.170:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012512.189:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012729.013:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0926/012844.297:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012844.305:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012848.608:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012848.610:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012848.632:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012848.636:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012849.073:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012849.073:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012849.302:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/012849.333:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/014011.902:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0926/014355.081:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0926/025128.307:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[0926/112754.615:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0926/112754.619:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[0927/013613.184:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1029/003920.279:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1029/004407.754:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1029/161712.612:INFO:CONSOLE(0)] "Access to fetch at 'https://telemetry.tradingview.com/free/report' from origin 'https://tr.tradingview.com' has been blocked by CORS policy: Request header field content-type is not allowed by Access-Control-Allow-Headers in preflight response.", source: https://tr.tradingview.com/chart/n4w8LGv1/?symbol=BITSTAMP%3ABTCUSDT (0)
+[1029/161712.631:INFO:CONSOLE(148)] "2021-10-29T13:17:12.575Z:Fetch:POST //telemetry.tradingview.com/free/report. TypeError: Failed to fetch", source: https://tr.tradingview.com/static/bundles/chart_not_found.61b7c836f7a0a01bcd90.js (148)
+[1029/161800.530:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1029/162156.190:INFO:CONSOLE(0)] "Access to fetch at 'https://telemetry.tradingview.com/site-free/report' from origin 'https://tr.tradingview.com' has been blocked by CORS policy: Request header field content-type is not allowed by Access-Control-Allow-Headers in preflight response.", source: https://tr.tradingview.com/chart/n4w8LGv1/?symbol=BITSTAMP%3ABTCUSDT (0)
+[1029/162156.193:INFO:CONSOLE(148)] "2021-10-29T13:21:56.190Z:Fetch:POST //telemetry.tradingview.com/site-free/report. TypeError: Failed to fetch", source: https://tr.tradingview.com/static/bundles/chart_not_found.61b7c836f7a0a01bcd90.js (148)
+[1029/171335.094:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1029/172831.194:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1029/174312.786:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1029/175106.463:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1029/180329.260:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1029/182035.016:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1029/210957.999:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[1029/210958.005:WARNING:dns_config_service_win.cc(712)] Failed to read DnsConfig.
+[1101/194811.533:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
+[1101/201050.329:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled

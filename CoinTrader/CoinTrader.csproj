@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEC7EA89-A470-4F51-997B-36B95CF07476}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CoinTrader</RootNamespace>
+    <AssemblyName>CoinTrader</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Binance.Net, Version=6.13.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Binance.Net.6.13.0\lib\netstandard2.0\Binance.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="CryptoExchange.Net, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CryptoExchange.Net.3.8.0\lib\netstandard2.0\CryptoExchange.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="LumenWorks.Framework.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5ad3ea2f85776344, processorArchitecture=MSIL">
+      <HintPath>..\packages\LumenWorksCsvReader.4.0.0\lib\net461\LumenWorks.Framework.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTrader.Indicator, Version=1.0.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetTrader.Indicator.1.0.5\lib\netstandard2.0\NetTrader.Indicator.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SuperSocket.ClientEngine, Version=0.10.0.0, Culture=neutral, PublicKeyToken=ee9af13f57f00acc, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperSocket.ClientEngine.Core.0.10.0\lib\net45\SuperSocket.ClientEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Specialized, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Specialized.4.3.0\lib\net46\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.NameResolution, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.NameResolution.4.3.0\lib\net46\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Security.4.3.0\lib\net46\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telegram.Bot, Version=15.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telegram.Bot.15.7.1\lib\net45\Telegram.Bot.dll</HintPath>
+    </Reference>
+    <Reference Include="WebSocket4Net, Version=0.15.2.11, Culture=neutral, PublicKeyToken=eb4e154b696bf72a, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebSocket4Net.0.15.2\lib\net45\WebSocket4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\DockPanelSuite.3.0.6\lib\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BOLL\CBollingerAnalyzer.cs" />
+    <Compile Include="Fibonacci\CClassicOrStandardPivotLevels.cs" />
+    <Compile Include="Fibonacci\CConstants.cs" />
+    <Compile Include="Fibonacci\CFibboLevels.cs" />
+    <Compile Include="Fibonacci\CFibonacciPivotLevels.cs" />
+    <Compile Include="Fibonacci\CFibonacciRetracement.cs" />
+    <Compile Include="Fibonacci\CPivotLevelsBase.cs" />
+    <Compile Include="Fibonacci\CPivotPoints.cs" />
+    <Compile Include="Fibonacci\EPivotPointsType.cs" />
+    <Compile Include="Log\CDataWriter.cs" />
+    <Compile Include="Log\CLogWriter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\CActionTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\CBinanceDataController.cs" />
+    <Compile Include="Source\CChartAnalyzer.cs" />
+    <Compile Include="Source\CSignal.cs" />
+    <Compile Include="Source\CSymbolRenderer.cs" />
+    <Compile Include="Source\CSymbolTicker.cs" />
+    <Compile Include="Source\CTelegramCommandParser.cs" />
+    <Compile Include="Source\CTelegramDataController.cs" />
+    <Compile Include="Source\CTwitterDataController.cs" />
+    <Compile Include="Source\CUtils.cs" />
+    <Compile Include="Source\EAsciMap.cs" />
+    <Compile Include="UI\CBudgetManager.cs" />
+    <Compile Include="UI\COrderBookRow.cs" />
+    <Compile Include="UI\CRowInfo.cs" />
+    <Compile Include="UI\CSupResRowInfo.cs" />
+    <Compile Include="UI\CTradeHistory.cs" />
+    <Compile Include="UI\CTradeItem.cs" />
+    <Compile Include="UI\ESignalReason.cs" />
+    <Compile Include="UI\ExtensionMethods.cs" />
+    <Compile Include="UI\F_AutoTrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\F_AutoTrade.Designer.cs">
+      <DependentUpon>F_AutoTrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\F_BTCWatcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\F_BTCWatcher.Designer.cs">
+      <DependentUpon>F_BTCWatcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\F_GeneralView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\F_GeneralView.Designer.cs">
+      <DependentUpon>F_GeneralView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\F_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\F_Login.Designer.cs">
+      <DependentUpon>F_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\F_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\F_Main.Designer.cs">
+      <DependentUpon>F_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\F_OrderManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\F_OrderManagement.Designer.cs">
+      <DependentUpon>F_OrderManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\F_Portfolio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\F_Portfolio.Designer.cs">
+      <DependentUpon>F_Portfolio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\F_QueryWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\F_QueryWindow.Designer.cs">
+      <DependentUpon>F_QueryWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\F_SignalMatrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\F_SignalMatrix.Designer.cs">
+      <DependentUpon>F_SignalMatrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\F_Signals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\F_Signals.Designer.cs">
+      <DependentUpon>F_Signals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\F_SupportResistanceSignal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\F_SupportResistanceSignal.Designer.cs">
+      <DependentUpon>F_SupportResistanceSignal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\F_SymbolDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\F_SymbolDetail.Designer.cs">
+      <DependentUpon>F_SymbolDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\F_VolumeIndicator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\F_VolumeIndicator.Designer.cs">
+      <DependentUpon>F_VolumeIndicator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucAutoTrade.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucAutoTrade.Designer.cs">
+      <DependentUpon>ucAutoTrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucBTCWatcher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucBTCWatcher.Designer.cs">
+      <DependentUpon>ucBTCWatcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucCandleChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucCandleChart.Designer.cs">
+      <DependentUpon>ucCandleChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucCandleTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucCandleTable.Designer.cs">
+      <DependentUpon>ucCandleTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucConnect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucConnect.Designer.cs">
+      <DependentUpon>ucConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucOrder.Designer.cs">
+      <DependentUpon>ucOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucOrderBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucOrderBook.Designer.cs">
+      <DependentUpon>ucOrderBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucPortfolioManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucPortfolioManager.Designer.cs">
+      <DependentUpon>ucPortfolioManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucPortfolioRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucPortfolioRow.Designer.cs">
+      <DependentUpon>ucPortfolioRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucPriceLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucPriceLabel.Designer.cs">
+      <DependentUpon>ucPriceLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucQueryPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucQueryPane.Designer.cs">
+      <DependentUpon>ucQueryPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucSignalRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucSignalRow.Designer.cs">
+      <DependentUpon>ucSignalRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucSignals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucSignals.Designer.cs">
+      <DependentUpon>ucSignals.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\F_AutoTrade.resx">
+      <DependentUpon>F_AutoTrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\F_BTCWatcher.resx">
+      <DependentUpon>F_BTCWatcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\F_GeneralView.resx">
+      <DependentUpon>F_GeneralView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\F_Login.resx">
+      <DependentUpon>F_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\F_Main.resx">
+      <DependentUpon>F_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\F_OrderManagement.resx">
+      <DependentUpon>F_OrderManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\F_Portfolio.resx">
+      <DependentUpon>F_Portfolio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\F_QueryWindow.resx">
+      <DependentUpon>F_QueryWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\F_SignalMatrix.resx">
+      <DependentUpon>F_SignalMatrix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\F_SupportResistanceSignal.resx">
+      <DependentUpon>F_SupportResistanceSignal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\F_VolumeIndicator.resx">
+      <DependentUpon>F_VolumeIndicator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucAutoTrade.resx">
+      <DependentUpon>ucAutoTrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucBTCWatcher.resx">
+      <DependentUpon>ucBTCWatcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucCandleChart.resx">
+      <DependentUpon>ucCandleChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucCandleTable.resx">
+      <DependentUpon>ucCandleTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucConnect.resx">
+      <DependentUpon>ucConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucOrder.resx">
+      <DependentUpon>ucOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucOrderBook.resx">
+      <DependentUpon>ucOrderBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucPortfolioManager.resx">
+      <DependentUpon>ucPortfolioManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucPortfolioRow.resx">
+      <DependentUpon>ucPortfolioRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucPriceLabel.resx">
+      <DependentUpon>ucPriceLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucQueryPane.resx">
+      <DependentUpon>ucQueryPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucSignalRow.resx">
+      <DependentUpon>ucSignalRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucSignals.resx">
+      <DependentUpon>ucSignals.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
