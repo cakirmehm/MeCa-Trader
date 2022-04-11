@@ -13,12 +13,11 @@ A general use binance trading Windows form (server) with several functionalities
 
 
 ## General View
-![sc-1-general-view.png](https://github.com/cakirmehm/Foolball/blob/master/screenshot.png)
+![sc-1-general-view.png](sc-1-general-view.png)
 
 
 ## Query View
-![sc-2-query-view.png](https://github.com/cakirmehm/Foolball/blob/master/screenshot.png)
+![sc-2-query-view.png](sc-2-query-view.png)
 
 ## Telegram Responses
-![sc-3-telegram-response.JPG]
-(https://github.com/cakirmehm/Foolball/blob/master/screenshot.png)# MeCa-Trader
+![sc-3-telegram-response.JPG](sc-3-telegram-response.JPG)
