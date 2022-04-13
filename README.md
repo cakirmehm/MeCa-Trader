@@ -11,6 +11,11 @@ A general use binance trading Windows form (server) with several functionalities
  6. Portfolio display with the average costs of each pair
  7. Fast indexed queries
 
+## Example Video
+https://user-images.githubusercontent.com/17138051/163275097-d7cbcce6-7060-45d0-b687-284f51b821bd.mp4
+
+
+
 
 ## General View
 ![sc-1-general-view.png](sc-1-general-view.png)
